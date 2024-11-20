@@ -59,7 +59,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.5.0</version>
                 <configuration>
-                    <mainClass>MainKt</mainClass>
+                    <mainClass>uca.shape.MainKt</mainClass>
                 </configuration>
             </plugin>
         </plugins>
