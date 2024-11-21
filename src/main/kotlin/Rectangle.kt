@@ -1,5 +1,7 @@
 package uca.shape
 
+import kotlin.time.measureTimedValue
+
 open class Rectangle(
     override var ancrage : Vecteur2D,
     var largeur : Double,
@@ -11,7 +13,16 @@ open class Rectangle(
         get() = 2 * (largeur + longueur)
 }
 
-class Carré(
+class Carre(
     override var ancrage : Vecteur2D,
-    var côté : Double
-) : Rectangle(ancrage, côté, côté) {}
+    cote : Double
+) : Rectangle(ancrage, cote, cote) {
+    var cote: Double
+    get() {
+        return largeur
+    }
+    set(value) {
+        largeur = value
+        longueur = value
+    }
+}
