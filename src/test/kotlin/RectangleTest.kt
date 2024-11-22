@@ -45,14 +45,12 @@ class RectangleTest {
 
     @Test
     fun getLargeur() {
-        // TODO
-        assertFalse(true)
+        assertEquals(rec1.largeur, 50.0, 1e-4)
     }
 
     @Test
     fun getLongueur() {
-        // TODO
-        assertFalse(true)
+        assertEquals(rec1.longueur, 20.0, 1e-4)
     }
 
 }
