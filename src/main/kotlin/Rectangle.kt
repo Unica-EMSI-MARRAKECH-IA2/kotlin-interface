@@ -1,6 +1,5 @@
 package uca.shape
 
-import kotlin.time.measureTimedValue
 
 open class Rectangle(
     override var ancrage : Vecteur2D,

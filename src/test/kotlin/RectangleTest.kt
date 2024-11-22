@@ -27,7 +27,7 @@ class RectangleTest {
     fun getAire() {
         val assumedArea = longueur * largeur
         assert(rec1.aire == assumedArea) {
-            println("Erreur dans le calul aire")
+            println("Erreur dans le calcul aire")
         }
     }
 
@@ -36,7 +36,7 @@ class RectangleTest {
         with(rec1) {
             var per : Double = longueur + largeur
             per *= 2
-            assertEquals(perimetre, per, 1e-7,  "Erreur dans le calul perimetre")
+            assertEquals(perimetre, per, 1e-7,  "Erreur dans le calcul perimetre")
         }
     }
 
