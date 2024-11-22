@@ -34,11 +34,11 @@ class RectangleTest {
 
     @Test
     fun getAncrage() {
-        assert(rec1.ancrage.equals(pt1)) {
+        assert(rec1.ancrage == pt1) {
             println("Erreur dans la lecture du point ancrage")
         }
         rec1.ancrage = pt2
-        assert(rec1.ancrage.equals(pt2)) {
+        assert(rec1.ancrage == pt2) {
             println("Erreur dans la lecture du point ancrage")
         }
     }
