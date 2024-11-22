@@ -3,22 +3,30 @@ import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import uca.shape.Rectangle
 import uca.shape.Vecteur2D
+import kotlin.random.Random
 
 class RectangleTest {
 
     var pt1 = Vecteur2D(10.0, 10.0)
     var pt2 = Vecteur2D(10.0, 15.0)
-    var rec1 = Rectangle(pt1, 50.0, 20.0)
+    var longueur = 50.0
+    var largeur = 20.0
+    var rec1 = Rectangle(pt1, largeur, longueur)
 
     @BeforeEach
     fun setUp() {
-        pt1 = Vecteur2D(10.0, 10.0)
-        rec1 = Rectangle(pt1, 50.0, 20.0)
+        longueur = Random.nextDouble(-10.0, 10.0)
+        largeur = Random.nextDouble(-10.0, 10.0)
+        val x = Random.nextDouble(-10.0, 10.0)
+        val y = Random.nextDouble(-10.0, 10.0)
+        pt1 = Vecteur2D(x, y)
+        rec1 = Rectangle(pt1, largeur, longueur)
     }
 
     @Test
     fun getAire() {
-        assert(rec1.aire == 1000.0) {
+        val assumedArea = longueur * largeur
+        assert(rec1.aire == assumedArea) {
             println("Erreur dans le calul aire")
         }
     }
@@ -45,12 +53,11 @@ class RectangleTest {
 
     @Test
     fun getLargeur() {
-        assertEquals(rec1.largeur, 50.0, 1e-4)
+        assertEquals(rec1.largeur, largeur, 1e-4)
     }
 
     @Test
     fun getLongueur() {
-        assertEquals(rec1.longueur, 20.0, 1e-4)
+        assertEquals(rec1.longueur, longueur, 1e-4)
     }
-
 }
