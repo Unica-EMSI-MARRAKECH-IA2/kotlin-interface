@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f284b5c-dab7-4dc4-bf94-b697f25f1075" name="Changes" comment="clean code">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="2f284b5c-dab7-4dc4-bf94-b697f25f1075" name="Changes" comment="update idea config files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +38,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Kotlin.MainKt.executor": "Run",
+    "Maven.cop-td4 [clean].executor": "Run",
+    "Maven.cop-td4 [compile].executor": "Run",
+    "Maven.cop-td4 [org.codehaus.mojo:exec-maven-plugin:3.5.0:java].executor": "Run",
+    "Maven.cop-td4 [test].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
@@ -66,8 +70,17 @@
       <option name="presentableId" value="Default" />
       <updated>1732294270451</updated>
       <workItem from="1732294272208" duration="3825000" />
-      <workItem from="1732371533593" duration="5436000" />
+      <workItem from="1732371533593" duration="5871000" />
     </task>
+    <task id="LOCAL-00001" summary="update idea config files">
+      <option name="closed" value="true" />
+      <created>1732532680742</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732532680742</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -75,6 +88,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="clean code" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean code" />
+    <MESSAGE value="update idea config files" />
+    <option name="LAST_COMMIT_MESSAGE" value="update idea config files" />
   </component>
 </project>
